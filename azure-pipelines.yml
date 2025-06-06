@@ -25,6 +25,10 @@ steps:
       verbose: true
 
   - script: |
+      npm install -g gulp-cli
+    displayName: "Install Gulp CLI globally"
+
+  - script: |
       npx sass Tailspin.SpaceGame.Web/wwwroot:Tailspin.SpaceGame.Web/wwwroot
     displayName: "Compile Sass assets"
 
